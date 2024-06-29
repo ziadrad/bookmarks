@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>web page</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="./images/bookmark.png" type="image">
+</head>
+
+<body>
+
+
+    <div class="container py-5 d-flex flex-column justify-content-center align-items-center ">
+        <h1 class="text-center position-relative my-5 tittle">Bookmarker</h1>
+        <div class="form container d-flex flex-column justify-content-center align-items-center gap-4 ">
+            <h2 class="my-3">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+              </h2>
+              <div class="  w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkName" class="pb-2 fw-semibold">
+                  <i class="fa-solid fa-book-bookmark pe-2"></i>
+                  Site Name</label>
+                <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+              </div>
+              <div class="   w-100 d-flex flex-column justify-content-center">
+                <label for="SiteUrl" class="pb-2 fw-semibold">
+                  <i class="fa-solid fa-book-bookmark pe-2"></i>
+                  Site Url</label>
+                <input type="text"  placeholder="Site Url" class="form-control" id="bookmarkUrl" >
+              </div>
+              <button class="btn btn-submit mb-3 px-5" onclick="addbookmark()">Submit</button>
+
+        </div>
+        <table class="table mt-4 text-center bg-light">
+            <thead>
+              <tr><th class="text-capitalize">index</th>
+              <th class="text-capitalize">Website Name</th>
+              <th class="text-capitalize">Visit</th>
+              <th class="text-capitalize">Delete</th>
+            </tr></thead>
+            <tbody id="tableContent">
+                <!-- <tr>
+                  <td>1</td>
+                  <td>Nmascaj</td>              
+                  <td>
+                    <button class="btn btn-visit"  onclick="vis(i)">
+                      <i class="fa-solid fa-eye pe-2"></i>Visit
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger pe-2" onclick="del(i)" >
+                      <i class="fa-solid fa-trash-can"></i>
+                      Delete
+                    </button>
+                  </td>
+              </tr> -->
+              </tbody>
+          </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
